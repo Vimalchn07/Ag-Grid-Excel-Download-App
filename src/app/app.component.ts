@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ExcelService } from './excel.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ag-Grid-Excel-Download';
+  constructor(private excelService: ExcelService) { }
+
+  title = 'angular-exceljs-example';
 }
+
+
