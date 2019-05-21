@@ -8,7 +8,7 @@ import { ExcelDownloadComponent } from './excel-download/excel-download.componen
 import { AgGridDisplayComponent } from './ag-grid-display/ag-grid-display.component';
 import { RouterModule, Routes } from '@angular/router';
 import { routes } from './app-routing.module';
-import { AppRoutingModule } from './/app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { AppRoutingModule } from './/app-routing.module';
     AgGridDisplayComponent
   ],
   imports: [
-    BrowserModule, AgGridModule.withComponents([AppComponent]), RouterModule.forRoot(routes), AppRoutingModule
+    BrowserModule, AgGridModule.withComponents([AppComponent]), RouterModule.forRoot(routes)
   ],
   providers: [ExcelService],
   bootstrap: [AppComponent]
